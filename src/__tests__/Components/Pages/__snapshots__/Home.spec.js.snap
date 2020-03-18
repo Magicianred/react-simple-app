@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Snapshots Matches the snapshot (with default title) 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="page home jumbotron"
+  >
+    <h2>
+      Home page
+    </h2>
+    <p>
+      This is the home page
+    </p>
+  </div>
+</div>
+`;

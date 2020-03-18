@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component Snapshots Matches the snapshot (with default title) 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="contact jumbotron"
+  >
+    <h2>
+      Contact page
+    </h2>
+    <p>
+      This is the contact page
+    </p>
+  </div>
+</div>
+`;

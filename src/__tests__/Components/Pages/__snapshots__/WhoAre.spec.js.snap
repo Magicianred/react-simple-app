@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WhoAre Component Snapshots Matches the snapshot (with default title) 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="page whoare jumbotron"
+  >
+    <h2>
+      Who Are
+    </h2>
+    <p>
+      This is the who are page
+    </p>
+  </div>
+</div>
+`;
