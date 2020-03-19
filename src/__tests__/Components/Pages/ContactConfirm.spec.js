@@ -17,18 +17,18 @@ afterEach(() => {
     container = null;
 });
 
-describe("Show the Contact Us page", () => {
+describe("Show the Contact Confirm page", () => {
 
     describe("Snapshots", () => {
     
-        it("Matches the snapshot (with default title)", () => {
+        xit("Matches the snapshot (with default title)", () => {
             const instance = create(<Contact />);
             expect(instance.toJSON()).toMatchSnapshot();
         });
     
     });
 
-    it("Show about page", () => {
+    xit("Show contact confirm page", () => {
         act(() => {
             render(<Contact />, container);
         });
@@ -36,11 +36,7 @@ describe("Show the Contact Us page", () => {
         expect(container.querySelector("p").textContent).toBe("This is the contact page");
     });
 
-    xit("Show form module to send message", () => {
-
-    });
-
-    xit("Form module cannot send if miss require fields", () => {
+    xit("Show the data sent", () => {
 
     });
 });

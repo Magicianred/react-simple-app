@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Show the Who Are page Snapshots Matches the snapshot (with default params) 1`] = `
+exports[`Show the Where Are page Snapshots Matches the snapshot (with default params) 1`] = `
 <div
   className="page"
 >
   <div
-    className="page whoare jumbotron"
+    className="page whereare jumbotron"
   >
     <h2>
-      Who Are
+      Where Are
     </h2>
     <p>
-      This is the who are page
+      This is the where are page
     </p>
   </div>
   <header

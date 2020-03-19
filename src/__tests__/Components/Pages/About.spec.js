@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { create } from 'react-test-renderer';
 
 import AboutSectionMenu from "./../../../Components/Partials/AboutSectionMenu";
-import WhoAre from "./../../../Components/Pages/WhoAre";
+import About from "./../../../Components/Pages/About";
 
 Enzyme.configure({ adapter: new Adapter() });
 let container = null;
@@ -21,40 +21,39 @@ afterEach(() => {
     container = null;
 });
 
-describe("Show the Who Are page", () => {
+describe("Show the About Us page", () => {
 
     describe("Snapshots", () => {
     
         it("Matches the snapshot (with default params)", () => {
-            const instance = create(<WhoAre />);
+            const instance = create(<About />);
             expect(instance.toJSON()).toMatchSnapshot();
         });
     
     });
 
-    it("Render Component", () => {
+    it("Show about page", () => {
         act(() => {
-            render(<WhoAre />, container);
+            render(<About />, container);
         });
-        expect(container.querySelector("h2").textContent).toBe("Who Are");
-        expect(container.querySelector("p").textContent).toBe("This is the who are page");
-    });
-
-    it("Show Who Are page", () => {
-        const wrapper = shallow(<WhoAre />);
-        expect(wrapper.contains(<AboutSectionMenu />)).toBe(true);
+        expect(container.querySelector("h2").textContent).toBe("About Us page");
+        expect(container.querySelector("p").textContent).toBe("This is the about us page");
     });
 
     it("Show the about section menu", () => {
-        const wrapper = shallow(<WhoAre />);
+        const wrapper = shallow(<About />);
         expect(wrapper.contains(<AboutSectionMenu />)).toBe(true);
     });
 
-    xit("Show almost one link/button to Person details", () => {
-
+    it("Show link to Who Are page", () => {
+        render(<About />, container);
+        expect(container.querySelectorAll("a[href='/about/whoare']")[0].textContent).toBe("Who Are");
     });
 
-    xit("Click on link/button to Person details", () => {
-
+    it("Show link to Where Are page", () => {
+        act(() => {
+            render(<About />, container);
+        });
+        expect(container.querySelectorAll("a[href='/about/whereare']")[0].textContent).toBe("Where Are");
     });
 });

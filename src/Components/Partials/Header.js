@@ -5,8 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from './../../logo.svg';
 
 /**
- * Component for showing the header of the site.
+ * Functional Component for showing the header of the site.
  * @component
+ * @param {string} title Title of the site
  * @example
  * const sitename = 'my site name'
  * return (
@@ -30,10 +31,11 @@ const Header = ({ title }) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/whoare">Who Are</Nav.Link>
-                            <Nav.Link href="/contact">Contact Us</Nav.Link>
-                            <Nav.Link href="/altro">Altro</Nav.Link>
+                            <Nav.Link id="home_link" href="/">Home</Nav.Link>
+                            <Nav.Link id="about_link" href="/about">About Us</Nav.Link>
+                            <Nav.Link id="contact_link" href="/contact">Contact Us</Nav.Link>
+                            <Nav.Link id="notfound_link" href="/abcdefg">Not Found</Nav.Link>
+                            <Nav.Link id="error_link" href="/error">Error Page</Nav.Link>
                             <Nav.Link target="_blank" href="/docs">Docs [open new page]</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

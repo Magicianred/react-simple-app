@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Component Snapshots Matches the snapshot (with default title) 1`] = `
+exports[`Show a home page Snapshots Matches the snapshot (with default title) 1`] = `
 <div
   className="page"
 >

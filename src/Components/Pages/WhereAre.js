@@ -3,21 +3,21 @@ import AboutSectionMenu from './../Partials/AboutSectionMenu';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
 /**
- * Component for showing the Who Are page.
+ * Component for showing the Where Are page.
  * 
  * @component
  * @example
  * return (
- *   <WhoAre />
+ *   <WhereAre />
  * )
  */
-class WhoAre extends Component {
+class WhereAre extends Component {
     render() {
         return (
             <div className="page">
-                <Jumbotron className="page whoare">
-                    <h2>Who Are</h2>
-                    <p>This is the who are page</p>
+                <Jumbotron className="page whereare">
+                    <h2>Where Are</h2>
+                    <p>This is the where are page</p>
                 </Jumbotron>
                 <AboutSectionMenu />
             </div>
@@ -25,4 +25,4 @@ class WhoAre extends Component {
     }
 }
 
-export default WhoAre;
+export default WhereAre;

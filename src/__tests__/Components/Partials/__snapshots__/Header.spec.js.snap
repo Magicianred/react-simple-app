@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header Partials Component Snapshots Matches the snapshot (with default title) 1`] = `
+exports[`Show the Header site Snapshots Matches the snapshot (with default title) 1`] = `
 <header
   className="partial header"
 >
@@ -50,12 +50,12 @@ exports[`Header Partials Component Snapshots Matches the snapshot (with default 
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="/whoare"
-          href="/whoare"
+          data-rb-event-key="/about"
+          href="/about"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
-          Who Are
+          About Us
         </a>
         <a
           className="nav-link"
@@ -68,12 +68,21 @@ exports[`Header Partials Component Snapshots Matches the snapshot (with default 
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="/altro"
-          href="/altro"
+          data-rb-event-key="/abcdefg"
+          href="/abcdefg"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
-          Altro
+          Not Found
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="/error"
+          href="/error"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Error Page
         </a>
         <a
           className="nav-link"
@@ -91,7 +100,7 @@ exports[`Header Partials Component Snapshots Matches the snapshot (with default 
 </header>
 `;
 
-exports[`Header Partials Component Snapshots Matches the snapshot (with title: 'My App Title') 1`] = `
+exports[`Show the Header site Snapshots Matches the snapshot (with title: 'My App Title') 1`] = `
 <header
   className="partial header"
 >
@@ -141,12 +150,12 @@ exports[`Header Partials Component Snapshots Matches the snapshot (with title: '
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="/whoare"
-          href="/whoare"
+          data-rb-event-key="/about"
+          href="/about"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
-          Who Are
+          About Us
         </a>
         <a
           className="nav-link"
@@ -159,12 +168,21 @@ exports[`Header Partials Component Snapshots Matches the snapshot (with title: '
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="/altro"
-          href="/altro"
+          data-rb-event-key="/abcdefg"
+          href="/abcdefg"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
-          Altro
+          Not Found
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="/error"
+          href="/error"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Error Page
         </a>
         <a
           className="nav-link"

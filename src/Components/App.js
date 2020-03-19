@@ -1,30 +1,27 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Pages/Home';
-import WhoAre from './Pages/WhoAre';
-import Contact from './Pages/Contact';
-import NotFound from './Pages/NotFound';
+import { BrowserRouter as Router } from 'react-router-dom';
+import SiteRoutes from './Sections/SiteRoutes';
 import Header from './Partials/Header';
 import Footer from './Partials/Footer';
 import Container from 'react-bootstrap/Container';
 import './App.css';
-// import pages from './../pages.json';
 
+/**
+ * Title of the site
+ */
 const siteName = 'Simple App React';
 
+/**
+ * This fuction startup the application
+ * @function App
+ */
 function App() {
   return (
     <Container className="App">
       <Header title={siteName} />
-        <Router>
-            <Switch>
-              {/* {pages.map(page => <Route exact path={page.path} component={page.component} />)} */}
-              <Route exact path="/" component={Home} />
-              <Route exact path="/whoare" component={WhoAre} />
-              <Route exact path="/contact" component={Contact} />
-              <Route component={NotFound} />
-            </Switch>
-        </Router>
+      <Router>
+          <SiteRoutes />
+      </Router>
       <Footer />
     </Container>
   );

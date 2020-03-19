@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Partials Component Snapshots Matches the snapshot (with default title) 1`] = `
+exports[`Show the Footer site Snapshots Matches the snapshot (with default params) 1`] = `
 <footer
   className="partial footer"
 >

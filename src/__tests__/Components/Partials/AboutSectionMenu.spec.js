@@ -1,21 +1,20 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Footer from './../../../Components/Partials/Footer'
+import AboutSectionMenu from './../../../Components/Partials/AboutSectionMenu'
 
-describe("Show the Footer site", () => {
+describe("Show the About Section Menu", () => {
 
     describe("Snapshots", () => {
     
         it("Matches the snapshot (with default params)", () => {
-            const instance = create(<Footer />);
+            const instance = create(<AboutSectionMenu />);
             expect(instance.toJSON()).toMatchSnapshot();
         });
     
     });
 
-    xit("Show Footer site", () => {
+    xit("Show About Section Menu", () => {
 
     });
-    
 });

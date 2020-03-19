@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { create } from 'react-test-renderer';
 
 import AboutSectionMenu from "./../../../Components/Partials/AboutSectionMenu";
-import WhoAre from "./../../../Components/Pages/WhoAre";
+import WhereAre from "./../../../Components/Pages/WhereAre";
 
 Enzyme.configure({ adapter: new Adapter() });
 let container = null;
@@ -21,40 +21,35 @@ afterEach(() => {
     container = null;
 });
 
-describe("Show the Who Are page", () => {
+describe("Show the Where Are page", () => {
 
     describe("Snapshots", () => {
     
         it("Matches the snapshot (with default params)", () => {
-            const instance = create(<WhoAre />);
+            const instance = create(<WhereAre />);
             expect(instance.toJSON()).toMatchSnapshot();
         });
     
     });
 
-    it("Render Component", () => {
+    it("Show Where Are page", () => {
         act(() => {
-            render(<WhoAre />, container);
+            render(<WhereAre />, container);
         });
-        expect(container.querySelector("h2").textContent).toBe("Who Are");
-        expect(container.querySelector("p").textContent).toBe("This is the who are page");
-    });
-
-    it("Show Who Are page", () => {
-        const wrapper = shallow(<WhoAre />);
-        expect(wrapper.contains(<AboutSectionMenu />)).toBe(true);
+        expect(container.querySelector("h2").textContent).toBe("Where Are");
+        expect(container.querySelector("p").textContent).toBe("This is the where are page");
     });
 
     it("Show the about section menu", () => {
-        const wrapper = shallow(<WhoAre />);
+        const wrapper = shallow(<WhereAre />);
         expect(wrapper.contains(<AboutSectionMenu />)).toBe(true);
     });
 
-    xit("Show almost one link/button to Person details", () => {
+    xit("Show almost one link/button to Place details", () => {
 
     });
 
-    xit("Click on link/button to Person details", () => {
+    xit("Click on link/button to Place details", () => {
 
     });
 });

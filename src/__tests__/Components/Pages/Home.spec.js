@@ -17,7 +17,7 @@ afterEach(() => {
     container = null;
 });
 
-describe("Home Component", () => {
+describe("Show a home page", () => {
 
     describe("Snapshots", () => {
     
@@ -28,13 +28,26 @@ describe("Home Component", () => {
     
     });
 
-    describe("Check content elements", () => {
-        it("Render Component", () => {
-            act(() => {
-                render(<Home />, container);
-            });
-            expect(container.querySelector("h2").textContent).toBe("Home page");
-            expect(container.querySelector("p").textContent).toBe("This is the home page");
+    it("Show home page", () => {
+        act(() => {
+            render(<Home />, container);
         });
+        expect(container.querySelector("h2").textContent).toBe("Home page");
+        expect(container.querySelector("p").textContent).toBe("This is the home page");
+    });
+
+    xit("Show the header", () => {
+    });
+
+    xit("Show the site menu", () => {
+    });
+
+    xit("Show the site footer", () => {
+    });
+
+    xit("Show first message to users", () => {
+    });
+
+    xit("I press the next button", () => {
     });
 });

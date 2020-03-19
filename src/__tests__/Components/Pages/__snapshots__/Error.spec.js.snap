@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Show the Not Found page Snapshots Matches the snapshot (with default title) 1`] = `
+exports[`Show the Error page Snapshots Matches the snapshot (with default title) 1`] = `
 <div
   className="page"
 >

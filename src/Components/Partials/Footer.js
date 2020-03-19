@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * Component for showing the footer of the site
+ * Functional Component for showing the footer of the site
  * @component
  * @example
  * return (

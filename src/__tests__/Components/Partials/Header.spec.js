@@ -3,7 +3,7 @@ import { create } from 'react-test-renderer';
 
 import Header from './../../../Components/Partials/Header'
 
-describe("Header Partials Component", () => {
+describe("Show the Header site", () => {
 
     describe("Snapshots", () => {
     
@@ -19,5 +19,7 @@ describe("Header Partials Component", () => {
     
     });
 
-    
+    xit("Show Header site", () => {
+
+    });
 });
