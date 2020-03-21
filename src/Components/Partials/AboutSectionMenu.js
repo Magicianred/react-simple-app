@@ -12,8 +12,8 @@ import Navbar from 'react-bootstrap/Navbar';
  */
 const AboutSectionMenu = () => {
     return (
-        <header className="partial about menu">
-            <Navbar bg="info">
+        <header className="partial about menu" style={{ borderTop: "solid thin black", borderBottom: "solid thin black" }}>
+            <Navbar className="justify-content-center" fill="true" variant="tabs">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">

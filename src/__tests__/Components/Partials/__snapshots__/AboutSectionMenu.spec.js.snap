@@ -3,9 +3,16 @@
 exports[`Show the About Section Menu Snapshots Matches the snapshot (with default params) 1`] = `
 <header
   className="partial about menu"
+  style={
+    Object {
+      "borderBottom": "solid thin black",
+      "borderTop": "solid thin black",
+    }
+  }
 >
   <nav
-    className="navbar navbar-expand navbar-light bg-info"
+    className="justify-content-center navbar navbar-expand navbar-tabs"
+    fill="true"
   >
     <button
       aria-controls="basic-navbar-nav"
