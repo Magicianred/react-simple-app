@@ -51,7 +51,7 @@ exports[`Show the About Us page Snapshots Matches the snapshot (with default par
       <div
         aria-expanded={null}
         className="navbar-collapse collapse"
-        id="basic-navbar-nav"
+        id="about-navbar-nav"
       >
         <div
           className="mr-auto navbar-nav"

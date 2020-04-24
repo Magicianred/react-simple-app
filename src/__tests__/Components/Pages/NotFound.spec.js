@@ -1,7 +1,7 @@
 import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-import Enzyme, { shallow } from 'enzyme'
+import Enzyme, { shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16';
 import { create } from 'react-test-renderer';
 import { MemoryRouter } from "react-router-dom";
@@ -26,6 +26,14 @@ afterEach(() => {
 });
 
 describe("Show the Not Found page", () => {
+    let wrapper;
+    const defaultProps = {
+    };
+
+    beforeEach(() => {
+      // render the component once up here in this block. It runs before each test.
+      wrapper = shallow(<App {...defaultProps} />);
+    });
 
     describe("Snapshots", () => {
     
@@ -67,18 +75,25 @@ describe("Show the Not Found page", () => {
         expect(container.querySelector("h2").textContent).toBe("404 Page not found");
         expect(container.querySelector("p").textContent).toBe("The page is not found");
     });
-
-    xit("Show the header", () => {
-        const wrapper = shallow(
-            <App />
-        );
-        expect(wrapper.contains(<Header />)).toBe(true);
+        
+    it("Show the header", () => {
+        expect(wrapper.exists()).toBe(true);
+        expect(wrapper.find(Header).length).toBe(1);
     });
-
-    xit("Show the site menu", () => {
+    
+    it("Show the site menu", () => {
+        const app = mount(<App />);
+        expect(app.find("div#basic-navbar-nav").length).toBe(1);
+        expect(app.find("div#basic-navbar-nav a").length).toBe(6);
+        // Nav.Link doesn't pass id param
+        // expect(app.find("div#basic-navbar-nav a#home_link").length).toBe(1);
+        // expect(app.find("div#basic-navbar-nav a#about_link").length).toBe(1);
+        // expect(app.find("div#basic-navbar-nav a#contact_link").length).toBe(1);
     });
-
-    xit("Show the site footer", () => {
+    
+    it("Show the site footer", () => {
+        expect(wrapper.exists()).toBe(true);
+        expect(wrapper.find(Footer).length).toBe(1);
     });
 
 });

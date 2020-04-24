@@ -36,15 +36,6 @@ describe("Show a home page", () => {
         expect(container.querySelector("p").textContent).toBe("This is the home page");
     });
 
-    xit("Show the header", () => {
-    });
-
-    xit("Show the site menu", () => {
-    });
-
-    xit("Show the site footer", () => {
-    });
-
     xit("Show first message to users", () => {
     });
 

@@ -15,7 +15,7 @@ const AboutSectionMenu = () => {
         <header className="partial about menu" style={{ borderTop: "solid thin black", borderBottom: "solid thin black" }}>
             <Navbar className="justify-content-center" fill="true" variant="tabs">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="about-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/about">About Us</Nav.Link>
                         <Nav.Link id="whoare_link" href="/about/whoare">Who Are</Nav.Link>

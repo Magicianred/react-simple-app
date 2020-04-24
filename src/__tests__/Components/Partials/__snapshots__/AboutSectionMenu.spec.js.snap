@@ -28,7 +28,7 @@ exports[`Show the About Section Menu Snapshots Matches the snapshot (with defaul
     <div
       aria-expanded={null}
       className="navbar-collapse collapse"
-      id="basic-navbar-nav"
+      id="about-navbar-nav"
     >
       <div
         className="mr-auto navbar-nav"

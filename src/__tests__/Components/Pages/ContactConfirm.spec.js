@@ -21,14 +21,14 @@ describe("Show the Contact Confirm page", () => {
 
     describe("Snapshots", () => {
     
-        xit("Matches the snapshot (with default title)", () => {
+        it("Matches the snapshot (with default title)", () => {
             const instance = create(<Contact />);
             expect(instance.toJSON()).toMatchSnapshot();
         });
     
     });
 
-    xit("Show contact confirm page", () => {
+    it("Show contact confirm page", () => {
         act(() => {
             render(<Contact />, container);
         });
