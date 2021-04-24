@@ -1,6 +1,6 @@
 {
-  "name": "simple-app",
-  "version": "0.1.0",
+  "name": "react-simple-app",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -26,7 +26,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook-docs": "start-storybook --docs",
     "build-storybook": "build-storybook",
-    "build-storybook-docs": "build-storybook --docs"
+    "build-storybook-docs": "build-storybook --docs",
+    "all-shields-generate": "all-shields-cli"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@ptkdev/all-shields-cli": "^2.0.1",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",

@@ -1,0 +1,30 @@
+{
+	"files": ["README.md"],
+	"shields": [
+		{
+			"id": "my-badges",
+			"badges": [
+				{
+					"url": "https://github.com/Magicianred/react-simple-app",
+					"color": "#D3D3D3",
+					"label": "package name",
+					"title": "{{name}} {{version}}",
+					"message": "{{name}}",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				},
+				{
+					"url": "https://github.com/Magicianred/simple-app",
+					"color": "green",
+					"label": "based on",
+					"title": "simple-app",
+					"message": "simple-app",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				}
+			]
+		}
+	]
+}
