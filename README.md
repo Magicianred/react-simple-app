@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<!-- all-shields/my-badges:START -->
+
+[![react-simple-app 0.1.1](https://img.shields.io/badge/package%20name-react--simple--app-D3D3D3.svg?style=flat&logo=)](https://github.com/Magicianred/react-simple-app) [![simple-app](https://img.shields.io/badge/based%20on-simple--app-green.svg?style=flat&logo=)](https://github.com/Magicianred/simple-app)
+
+<!-- all-shields/my-badges:END -->
+
 # Simple App React 
 This app is a simple test of React
 
